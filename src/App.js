@@ -1,11 +1,11 @@
-import React from 'react';
-import './index.css';
-import Header from './Components/Header';
-
+import { AuthProvider } from './AuthContext';
+import { AppRouter } from './router';
 
 function App() {
   return (
-    <Header />
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
   );
 }
 
